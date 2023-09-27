@@ -49,5 +49,4 @@ window.onload = () => {
         form.reset();
     });
 
-    
 }
