@@ -26,7 +26,7 @@ window.onload = () => {
         const min = 18, max=55;
         const age = today.getFullYear() - dob.getFullYear();
         if (age < min || age > max) {
-            alert(`You must be between ${minAge} and ${maxAge} years old to register.`);
+            alert(`You must be between ${min} and ${max} years old to register.`);
             return;
         }
         const userData = {
