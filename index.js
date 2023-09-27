@@ -1,6 +1,6 @@
 window.onload = () => {
-    const form = document.getElementById('regiForm');
-    const table = document.getElementById('usertable');
+    const form = document.getElementById('registrationForm');
+    const table = document.getElementById('userTable');
     const tbody = table.querySelector('tbody');
 
     let usersData = [];
@@ -30,11 +30,11 @@ window.onload = () => {
             return;
         }
         const userData = {
-            name: document.getElementById('nm').value,
+            name: document.getElementById('name').value,
             email: document.getElementById('email').value,
-            password: document.getElementById('pwd').value,
+            password: document.getElementById('password').value,
             dob: document.getElementById('dob').value,
-            acceptTerms: document.getElementById('at').checked
+            acceptTerms: document.getElementById('acceptTerms').checked
         };
         usersData.push(userData);
         localStorage.setItem('userData', JSON.stringify(usersData));
