@@ -19,8 +19,8 @@ window.onload = () => {
         tbody.appendChild(newRow);
         });
     }
-    form.addEventListener('submit', function(event) {
-        event.preventDefault();
+    function submitForm() {
+        // event.preventDefault();
         const dob = new Date(document.getElementById('dob').value);
         const today = new Date();
         const min = 18, max=55;
@@ -48,5 +48,4 @@ window.onload = () => {
         tbody.appendChild(newRow);
         form.reset();
     });
-
 }
