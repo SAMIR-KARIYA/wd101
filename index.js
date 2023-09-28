@@ -12,7 +12,7 @@
             <td>${user.email}</td>
             <td>${user.password}</td>
             <td>${user.dob}</td>
-            <td>${user.at ? 'Yes' : 'No'}</td>`;
+            <td>${user.acceptTerms ? 'Yes' : 'No'}</td>`;
 
         table.appendChild(newRow);
         });
@@ -32,7 +32,7 @@
             email: document.getElementById('email').value,
             password: document.getElementById('password').value,
             dob: document.getElementById('dob').value,
-            at: document.getElementById('at').checked
+            at: document.getElementById('acceptTerms').checked
         };
         usersData.push(userData);
         localStorage.setItem('userData', JSON.stringify(usersData));
@@ -43,7 +43,7 @@
             <td>${userData.email}</td>
             <td>${userData.password}</td>
             <td>${userData.dob}</td>
-            <td>${userData.at ? 'Yes' : 'No'}</td> `;
+            <td>${userData.acceptTerms ? 'Yes' : 'No'}</td> `;
 
         table.appendChild(newRow);
         form.reset();
