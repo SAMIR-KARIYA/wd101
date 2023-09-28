@@ -1,5 +1,5 @@
     const form = document.getElementById('registrationForm');
-    const table = document.getElementById('usertable');
+    const table = document.getElementById('userTable');
         
     let usersData = [];
     let storageData=localStorage.getItem('userData');
