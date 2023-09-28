@@ -48,4 +48,5 @@ window.onload = () => {
         tbody.appendChild(newRow);
         form.reset();
     });
+    return true;
 }
