@@ -1,3 +1,4 @@
+
 <html>
 <head>
         <title>Registration Form</title>
@@ -5,7 +6,7 @@
 </head>
 <body>
     <h1>Registration Form</h1>
-    <form id="registrationForm" action="/localserver" onsubmit="return submitdata()">
+    <form id="registrationForm" action="/localserver" method="post" onsubmit="return validDate()">
         <fieldset>
             <legend>User information</legend>
             <label for="name">Name:</label>
