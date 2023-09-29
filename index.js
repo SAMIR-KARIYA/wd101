@@ -17,9 +17,9 @@
         table.appendChild(newRow);
         });
     }
-    function submitdata() {
-        console.log("Test");
-        const dob = new Date(document.getElementById('dob').value);
+    function validDate(){
+    const dob = new Date(document.getElementById('dob').value);
+    // let isValidDate = (dob)=>{
         const today = new Date();
         const min = 18, max=55;
         const age = today.getFullYear() - dob.getFullYear();
@@ -36,7 +36,6 @@
         };
         usersData.push(userData);
         localStorage.setItem('userData', JSON.stringify(usersData));
-
         const newRow = document.createElement('tr');
         newRow.innerHTML = `
             <td>${userData.name}</td>
@@ -44,7 +43,6 @@
             <td>${userData.password}</td>
             <td>${userData.dob}</td>
             <td>${userData.acceptTerms ? 'Yes' : 'No'}</td> `;
-
         table.appendChild(newRow);
         form.reset();
         return true;
