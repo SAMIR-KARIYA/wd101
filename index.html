@@ -6,7 +6,7 @@
 </head>
 <body>
     <h1>Registration Form</h1>
-    <form id="registrationForm" onsubmit="return submitdata()">
+    <form id="registrationForm" action="/localserver" onsubmit="return submitdata()">
         <fieldset>
             <legend>User information</legend>
             <label for="name">Name:</label>
@@ -27,6 +27,7 @@
             <button type="submit">Submit</button>
         </fieldset>
     </form>
+
     <h2>Registered Users</h2>
     <table id="userTable" border="1">
             <tr>
@@ -36,6 +37,7 @@
                 <th>DOB</th>
                 <th>Accepted terms?</th>
             </tr>
+        
     </table>
 </body>
 </html>
